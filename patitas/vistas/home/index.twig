@@ -1,0 +1,124 @@
+{% extends "master.twig" %}
+
+{% block contenido %}
+    <div class="row fullWidth collapse">
+        <div class="small-12 columns">
+            <ul id="banner_home">
+                <li><a href="{{ url('linea/literatura') }}"><img src="{{ asset('img/home/slider3.jpg') }}" /></a></li>
+                <li><a href="{{ url('linea/cocina') }}"><img src="{{ asset('img/home/slider2.jpg') }}" /></a></li>
+                <li><a href="{{ url('linea/educativa') }}"><img src="{{ asset('img/home/slider1.jpg') }}" /></a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="row seccion" id="lineas">
+        <div class="small-12 medium-3 columns text-center">
+            <a href="{{ url('linea/educativa') }}"><img src="{{ asset('img/home/cat_educacion.png') }}" /></a>
+            <div class="titulo rojo">Educaci&oacute;n</div>
+            <div>Libros, folletos y cartillas de trabajo para ni&ntilde;os de Preescolar y Primaria en &aacute;reas
+            de conocimiento.</div>
+        </div>
+        <div class="small-12 medium-3 columns text-center">
+            <a href="{{ url('linea/salud') }}"><img src="{{ asset('img/home/cat_belleza.png') }}" /></a>
+            <div class="titulo rojo">Salud y belleza</div>
+            <div>Apostamos por la Belleza Natural del ser humano, por el bienestar y la salud integral del cuerpo.</div>
+        </div>
+        <div class="small-12 medium-3 columns text-center">
+            <a href="{{ url('linea/literatura') }}"><img src="{{ asset('img/home/cat_literatura.png') }}" /></a>
+            <div class="titulo rojo">Literatura</div>
+            <div>Para personas con inter&eacute;s especial por la lectura. Enriquecer&aacute; sus conocimientos y vocabulario
+            leyendo.</div>
+        </div>
+        <div class="small-12 medium-3 columns text-center">
+            <a href="{{ url('linea/cocina') }}"><img src="{{ asset('img/home/cat_cocina.png') }}" /></a>
+            <div class="titulo rojo">Cocina</div>
+            <div>Gran variedad de t&iacute;tulos en los que forma f&aacute;cil, creativa y en poco tiempo, se logran
+            deliciosas recetas</div>
+        </div>
+    </div>
+    
+    <div class="nube" id="nosotros">
+        <div class="row seccion">
+            <div class="small-12 columns">
+                <div class="titulo grande text-center"><img src="{{ asset('img/home/icono_info1.png') }}" />Nosotros</div>
+            </div>
+            <div class="small-12 medium-6 columns">
+                <div class="titulo"><img src="{{ asset('img/home/icono_info2.png') }}" />Misi&oacute;n</div>
+                <div>Proveer a la comunidad educativa, alumnos y padres de familia con material did&aacute;ctico 
+                educativo, que permita reforzar conocimientos de manera individual y personalizada de acuerdo al 
+                ritmo de aprendizaje en los ni&ntilde;os que cursan prescolar y el primer ciclo de primaria, 
+                promoviendo el uso de una segunda lengua; potencializar habilidades motoras de los m&aacute;s 
+                peque&ntilde;os para generar desarrollo intelectual en la comunidad.</div>
+                
+                <div class="titulo"><img src="{{ asset('img/home/icono_info2.png') }}" />Visi&oacute;n</div>
+                <div>Ser reconocidos por la alta calidad y precios asequibles en nuestros productos aportando 
+                nuestro granito de arena a la comunidad educativa del pa&iacute;s, apoyando a nuestros 
+                peque&ntilde;os de escasos recursos para que su desarrollo intelectual sea apropiado y 
+                cree bienestar en su entorno.</div>
+                
+                <div class="titulo"><img src="{{ asset('img/home/icono_info2.png') }}" />Pol&iacute;tica de Calidad</div>
+                <div>Es nuestra filosof&iacute;a y pol&iacute;tica, realizar productos con altos est&aacute;ndares de 
+                calidad, garantizando dise&ntilde;o, contenido, impresi&oacute;n y acabados; por medio de excelentes 
+                materias primas, tecnolog&iacute;a de punta y mano de obra calificada.</div>
+            </div>
+            
+            <div class="small-12 medium-6 columns">
+                <ul id="slider_ipad">
+                    <li><img src="{{ asset('img/home/slide_ipad1.png') }}" /></li>
+                    <li><img src="{{ asset('img/home/slide_ipad2.png') }}" /></li>
+                    <li><img src="{{ asset('img/home/slide_ipad3.png') }}" /></li>
+                </ul>
+            </div>
+        </div>        
+    </div>
+    <div class="row seccion servicios" id="servicios">
+        <div class="small-12 columns"><div class="separador">&nbsp;</div></div>        
+        <div class="small-12 medium-6 columns">
+            <img rel='fade' class="img_fullwidth" src="{{ asset('img/home/img_servicios.jpg') }}" />
+            &nbsp;
+        </div>
+        <div class="small-12 medium-6 columns">
+            <div class="titulo azul"><img src="{{ asset('img/home/icono_servicios.png') }}" />Servicios</div>
+            <p>Por medio de impresos Litocortes S.A.S ofrecemos servicio de alta calidad a precios competitivos en 
+            las necesidades de impresi&oacute;n, plegado, corte, encolado, plastificado e inyecci&oacute;n de 
+            pl&aacute;stico, donde cada actividad cuenta con el equipo humano y material adecuado para desarrollar 
+            trabajos con alta calidad. Utilizando tecnolog&iacute;a de punta. Los dise&ntilde;os y precisi&oacute;n de 
+            impresi&oacute;n permiten obtener los mejores resultados en cada tipo de papel. Agregamos valor a nuestros 
+            servicios enriqueciendo los trabajos con creatividad y tecnolog&iacute;a.</p>
+            <p><img src="{{ asset('img/home/check.png') }}" /><big><strong>Sujeto a cantidad m&iacute;nima y m&aacute;xima.</strong></big></p>
+            <p><img src="{{ asset('img/home/check.png') }}" /><big><strong>Sujeto a disponibilidad de tr&aacute;fico y tiempo.</strong></big></p>
+            <p class="medium-text-right small-only-text-center">Producto elaborado por: <a href="http://www.litocortes.com" target="_blank"><img src="{{ asset('img/home/logo_litocortes.png') }}" /></a></p>
+        </div>
+        <div class="small-12 columns"><div class="separador">&nbsp;</div></div>
+    </div>
+    
+    <div class="novedades relativo" id="novedades">
+        <div class="row seccion">
+            <div class="small-12 columns text-center">
+                <div class="titulo oliva grande"><img src="{{ asset('img/home/icono_novedades.png') }}" />Novedades</div>
+            </div>
+        </div>
+        <div class="row fullWidth collapse seccion" data-equalizer>
+            <div class="small-12 medium-6 large-7 columns" data-equalizer-watch>
+                <div class="row">
+                    <div class="small-12 medium-4 large-offset-1 columns small-only-text-center">
+                        <img src="{{ asset('img/home/libro_matematicas.png') }}" />
+                    </div>
+                    <div class="small-12 medium-7 columns">
+                        <div class="titulo">Juegos: Pachito busca el Tesoro</div>
+                        <p>¡Juega GRATIS! Usando el c&oacute;digo impreso en tu libro “Pachito Matem&aacute;ticas” y busca el tesoro jugando domin&oacute; con las operaciones de Suma, Resta, Multiplicaci&oacute;n, Divisi&oacute;n y Fraccionarios. ¡Desc&aacute;rgalo en tu Celular y/o Tablet!</p>
+                        <div class="text-center">
+                            <a href="http://www.editorialescar.com/juegos" target="_blank"><img src="{{ asset('img/home/boton_proximamente.png') }}" /></a><br />
+                            <a href="https://play.google.com/store/apps/details?id=com.frontier.escarApp&hl=es_419" target="_blank"><img src="{{ asset('img/home/google_play.png') }}" /></a>
+                            <img src="{{ asset('img/home/app_store.png') }}" />
+                        </div>
+                    </div>
+                </div>                
+            </div>            
+            <div class="small-12 medium-6 large-5 columns relativo" data-equalizer-watch>                
+                <img id="pachito_novedades" class="img_fullwidth" src="{{ asset('img/home/pachito_novedades.png') }}" />
+            </div>
+        </div>
+        <div class="fondo_nubes">&nbsp;</div>
+    </div>
+{% endblock %}

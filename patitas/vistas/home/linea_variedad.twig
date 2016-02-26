@@ -1,0 +1,63 @@
+{% extends "master.twig" %}
+
+{% block contenido %}
+{% include 'home/menu_cat.twig' with { 'activo' : 3 } %}
+<div class="seccion interna relativo">
+    <div class="row">
+        <div class="small-12 medium-10 columns small-centered">
+            <div class="row collapse">
+                <div class="small-3 columns"><img src="{{ asset('img/variedad/titulo1.png') }}" /></div>
+                <div class="small-6 columns text-center"><div class="titulo xgrande amarillo">L&iacute;nea de Variedades</div></div>
+                <div class="small-3 columns"><img src="{{ asset('img/variedad/titulos2.png') }}" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 medium-5 columns"><img src="{{ asset('img/variedad/libros1.png') }}" /></div>
+        <div class="small-12 medium-7 columns">
+            <p class="text-justify">Muchas veces intentamos encontrar m&eacute;todos f&aacute;ciles y creativos que desarrolloen distintas 
+            t&eacute;maticas de expresi&oacute;n manual y decorativa. Presentamos t&iacute;tulos destacados para cada 
+            una de estas necesidades logrando as&iacute;, herramientas &uacute;tiles y pr&aacute;cticas como un 
+            &#x201c;paso a paso&#x201d; o &#x201c;H&aacute;galo Usted Mismo&#x201d; entre otros:</p>            
+            <ul>
+                <li>Pintura en tela y madera</li>
+                <li>Manualidades con Foami</li>
+                <li>Tejidos Crochet</li>
+                <li>Tejidos dos agujas</li>
+                <li>Decoraci&oacute;n con globos para fiestas</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 medium-6 columns">
+            <p><strong><big>L&iacute;nea especializada en Religi&oacute;n</big></strong></p>
+            <p class="text-justify">Dentro de estas publicaciones se ha buscado llegar a todas las personas con alguna creencia espiritual 
+            que sienta un lazo de conexi&oacute;n con un Ser Superior y que quiera afianzar esa relaci&oacute;n por 
+            medio de la oraci&oacute;n y la entrega espiritual.</p>
+            <p class="text-justify">Para los m&aacute;s peque&ntilde;os, hay publicaciones especiales con ilustraciones exclusivas y 
+            maravillosas que se remiten a sucesos escritos en la Biblia pero explicados con un lenguaje moderno y 
+            claro para los ni&ntilde;os.</p>
+            <ul>
+                <li>Mi primera Biblia</li>
+                <li>&Aacute;ngeles</li>
+                <li>Oraciones para todos los d&iacute;as</li>
+                <li>Salmos, Proverbios y Oraciones para ni&ntilde;os</li>
+            </ul>
+        </div>
+        <div class="small-12 medium-6 columns"><img src="{{ asset('img/variedad/libros2.png') }}" /></div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+            <div class="galeria">
+                <ul>
+                    <li><img src="{{ asset('img/variedad/libros1.png') }}" /></li>
+                    <li><img src="{{ asset('img/variedad/libros2.png') }}" /></li>
+                    <li><img src="{{ asset('img/variedad/libros3.png') }}" /></li>
+                    <li><img src="{{ asset('img/variedad/libros4.png') }}" /></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="fondo_nubes">&nbsp;</div>
+</div>
+{% endblock %}

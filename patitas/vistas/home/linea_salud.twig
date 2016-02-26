@@ -1,0 +1,52 @@
+{% extends "master.twig" %}
+
+{% block contenido %}
+{% include 'home/menu_cat.twig' with { 'activo' : 2 } %}
+<div class="seccion interna relativo">
+    <div class="row">
+        <div class="small-12 medium-10 columns small-centered">
+            <div class="row collapse">
+                <div class="small-3 columns"><img src="{{ asset('img/salud/titulo1.png') }}" /></div>
+                <div class="small-6 columns text-center"><div class="titulo xgrande magenta">L&iacute;nea Salud y Belleza</div></div>
+                <div class="small-3 columns"><img src="{{ asset('img/salud/titulo2.png') }}" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 medium-5 columns"><img src="{{ asset('img/salud/libros.png') }}" /></div>
+        <div class="small-12 medium-7 columns">
+            <p class="text-justify">Apostamos por la Belleza Natural del ser humano, por el bienestar y la salud integral del cuerpo. 
+            Dentro de nuestra l&iacute;nea de Salud y Belleza se encuentran diferentes t&iacute;tulos en los que 
+            se explica claramente c&oacute;mo de manera natural y con ayuda de plantas, tips y remedios caseros 
+            milenarios se logra el equilibrio en todo el cuerpo humano desde dentro, sin enfermedades y con una 
+            apariencia maravillosa.</p>
+            <p>Entre otros, encontrar&aacute; los siguientes t&iacute;tulos:</p>
+            <ul>
+                <li>Belleza Natural</li>
+                <li>S&aacute;bila</li>
+                <li>Remedios de las Abuelas</li>
+                <li>U&ntilde;as</li>
+                <li>Peinados para Ni&ntilde;as y ni&ntilde;os</li>
+                <li>Peinados para Damas</li>
+                <li>Maquillaje</li>
+                <li>&iquest;Qu&eacute; me pongo?</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+            <div class="galeria">
+                <ul>
+                    <li><img src="{{ asset('img/salud/libro1.png') }}" /></li>
+                    <li><img src="{{ asset('img/salud/libro2.png') }}" /></li>
+                    <li><img src="{{ asset('img/salud/libro3.png') }}" /></li>
+                    <li><img src="{{ asset('img/salud/libro4.png') }}" /></li>
+                    <li><img src="{{ asset('img/salud/libro5.png') }}" /></li>
+                    <li><img src="{{ asset('img/salud/libro6.png') }}" /></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="fondo_nubes">&nbsp;</div>
+</div>
+{% endblock %}

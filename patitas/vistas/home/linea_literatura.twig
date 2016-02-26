@@ -1,0 +1,72 @@
+{% extends "master.twig" %}
+
+{% block contenido %}
+{% include 'home/menu_cat.twig' with { 'activo' : 5 } %}
+<div class="seccion interna relativo">
+    <div class="row">
+        <div class="small-12 medium-10 columns small-centered">
+            <div class="row collapse">
+                <div class="small-3 columns"><img src="{{ asset('img/literatura/titulo1.png') }}" /></div>
+                <div class="small-6 columns text-center"><div class="titulo xgrande lavanda">L&iacute;nea de Literatura</div></div>
+                <div class="small-3 columns"><img src="{{ asset('img/literatura/titulo2.png') }}" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 medium-6 columns"><img src="{{ asset('img/literatura/libros.png') }}" /></div>
+        <div class="small-12 medium-6 columns">
+            <p class="text-justify">Contamos con una gran variedad de t&iacute;tulos Cl&aacute;sicos de la Literatura Universal, que pretenden 
+            llegar a cada estudiante y cada persona tenga un inter&eacute;s especial por la lectura y que desee enriquecer 
+            sus conocimientos y su vocabulario leyendo.</p>
+            <p>Entre otros t&iacute;tulos est&aacute;n:</p>
+            <div class="row">
+                <div class="small-12 medium-6 columns">
+                    <ul>
+                        <li>Mar&iacute;a</li>
+                        <li>La Divina Comedia</li>
+                        <li>El M&iacute;o Cid</li>
+                        <li>Popol Vuh</li>
+                        <li>El Extranjero</li>
+                        <li>La Odisea</li>
+                        <li>La Iliada</li>
+                        <li>Don Quijote de la Mancha</li>
+                        <li>La Celestina</li>
+                    </ul>
+                </div>
+                <div class="small-12 medium-6 columns">
+                    <ul>
+                        <li>De la Tierra a la Luna</li>
+                        <li>El Origen de la Vida</li>
+                        <li>Platero y Yo</li>
+                        <li>El Viejo y el Mar</li>
+                        <li>La Isla Misteriosa</li>
+                        <li>Romeo y Julieta</li>
+                        <li>Teor&iacute;a del Conocimiento</li>
+                        <li>La Revoluci&oacute;n Industr&iacute;al</li>
+                        <li>Utop&iacute;a</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+            <div class="galeria">
+                <ul>
+                    <li><img src="{{ asset('img/literatura/libro1.png') }}" /></li>
+                    <li><img src="{{ asset('img/literatura/libro2.png') }}" /></li>
+                    <li><img src="{{ asset('img/literatura/libro3.png') }}" /></li>
+                    <li><img src="{{ asset('img/literatura/libro4.png') }}" /></li>
+                    <li><img src="{{ asset('img/literatura/libro5.png') }}" /></li>
+                    <li><img src="{{ asset('img/literatura/libro6.png') }}" /></li>
+                    <li><img src="{{ asset('img/literatura/libro7.png') }}" /></li>
+                    <li><img src="{{ asset('img/literatura/libro8.png') }}" /></li>
+                    <li><img src="{{ asset('img/literatura/libro9.png') }}" /></li>
+                    <li><img src="{{ asset('img/literatura/libro10.png') }}" /></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="fondo_nubes">&nbsp;</div>
+</div>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends "master.twig" %}
+
+{% block contenido %}
+{% include 'home/menu_cat.twig' with { 'activo' : 4 } %}
+<div class="seccion interna relativo">
+    <div class="row">
+        <div class="small-12 medium-10 columns small-centered">
+            <div class="row collapse">
+                <div class="small-3 columns"><img src="{{ asset('img/cocina/titulo1.png') }}" /></div>
+                <div class="small-6 columns text-center"><div class="titulo xgrande verde">L&iacute;nea de Cocina</div></div>
+                <div class="small-3 columns"><img src="{{ asset('img/cocina/titulo2.png') }}" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 medium-5 columns"><img src="{{ asset('img/cocina/libros.png') }}" /></div>
+        <div class="small-12 medium-7 columns">
+            <p class="text-justify">Mantener un cuerpo saludable y alimentarse sanamente es obligaci&oacute;n en cada ser humano. 
+            Nuestra l&iacute;nea gastron&oacute;mica presenta una gran variedad de t&iacute;tulos en los que 
+            de forma f&aacute;cil, creativa y en poco tiempo, se logran deliciosas e innovadoras recetas que 
+            con ingredientes naturales disponibles en el mercado, permiten mantener h&aacute;bitos de 
+            alimentaci&oacute;n sorprendentemente saludables y exquisitos. Tambi&eacute;n contiene 
+            t&iacute;tulos para los amantes de la cocina tradicional con el delicioso saz&oacute;n de La Abuela.</p>
+            <p class="text-justify">Entre otros, se encuentran:</p>
+            <ul>
+                <li>Recetas de las Abuelas</li>
+                <li>Ensaladas</li>
+                <li>Coma Sano, Viva Bien</li>
+                <li>Postres</li>
+                <li>Carnes</li>
+                <li>Pescados</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+            <div class="galeria">
+                <ul>
+                    <li><img src="{{ asset('img/cocina/libro1.png') }}" /></li>
+                    <li><img src="{{ asset('img/cocina/libro2.png') }}" /></li>
+                    <li><img src="{{ asset('img/cocina/libro3.png') }}" /></li>
+                    <li><img src="{{ asset('img/cocina/libro4.png') }}" /></li>
+                    <li><img src="{{ asset('img/cocina/libro5.png') }}" /></li>
+                    <li><img src="{{ asset('img/cocina/libro6.png') }}" /></li>
+                    <li><img src="{{ asset('img/cocina/libro7.png') }}" /></li>
+                    <li><img src="{{ asset('img/cocina/libro8.png') }}" /></li>
+                    <li><img src="{{ asset('img/cocina/libro9.png') }}" /></li>
+                    <li><img src="{{ asset('img/cocina/libro10.png') }}" /></li>
+                    <li><img src="{{ asset('img/cocina/libro11.png') }}" /></li>
+                    <li><img src="{{ asset('img/cocina/libro12.png') }}" /></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="fondo_nubes">&nbsp;</div>
+</div>
+{% endblock %}
