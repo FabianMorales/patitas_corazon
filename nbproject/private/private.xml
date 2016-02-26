@@ -5,9 +5,15 @@
         <group>
             <file>file:/home/fabian/Proyectos/patitas_corazon/patitas/autoload.php</file>
             <file>file:/home/fabian/Proyectos/patitas_corazon/public_html/patitas_corazon/.htaccess</file>
+            <file>file:/home/fabian/Proyectos/patitas_corazon/patitas/clases/myFunciones.php</file>
+            <file>file:/home/fabian/Proyectos/patitas_corazon/patitas/clases/myDocumento.php</file>
             <file>file:/home/fabian/Proyectos/patitas_corazon/patitas/clases/myRoute.php</file>
-            <file>file:/home/fabian/Proyectos/patitas_corazon/patitas/lib/Slim/App.php</file>
+            <file>file:/home/fabian/Proyectos/patitas_corazon/patitas/clases/myConfig.php</file>
             <file>file:/home/fabian/Proyectos/patitas_corazon/public_html/patitas_corazon/index.php</file>
+            <file>file:/home/fabian/Proyectos/patitas_corazon/patitas/clases/myApp.php</file>
+            <file>file:/home/fabian/Proyectos/patitas_corazon/patitas/clases/myController.php</file>
+            <file>file:/home/fabian/Proyectos/patitas_corazon/patitas/lib/Slim/Slim.php</file>
+            <file>file:/home/fabian/Proyectos/patitas_corazon/patitas/clases/myView.php</file>
         </group>
     </open-files>
 </project-private>
