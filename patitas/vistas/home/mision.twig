@@ -1,0 +1,28 @@
+{% extends "master.twig" %}
+
+{% block contenido %}
+    <section id="mision">
+        <div class="row">
+            <div class="medium-9 columns">
+                <div class="row">
+                    <div class="small-12 columns">
+                        <h2>Misi&oacute;n</h2>
+                        <p>Nuestra misi&oacute;n es rescatar animales callejeros d&aacute;ndoles una
+                            rehabilitaci&oacute;n f&iacute;sica, y la oportunidad de un hogar y una familia.</p>
+                        <p>Contamos con una red de profesionales para realizar esterilizaciones, rescates y
+                            adopciones de perros y gatos, y de esta forma lograr concientizar cada día a más personas.</p>
+                    </div>
+                    <div class="small-12 columns">
+                        <img src="{{ asset('img/mision.jpg') }}" alt="Misi&oacute;n" />
+                    </div>
+                </div>
+            </div>
+            <div class="medium-3 columns">
+                <aside class="callout primary">
+                    <div class="subheader">Visi&oacute;n</div>
+                    <p>Revisa nuestra visi&oacute;n haciendo clic <a href="{{ url('vision') }}">aqu&iacute;</a></p>
+                </aside>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "master.twig" %}
+
+{% block contenido %}
+    <section id="nosotros">
+        <div class="row">
+            <div class="medium-9 columns">
+                <div class="row">
+                    <div class="small-12 columns">
+                        <h2>Sobre nosotros</h2>
+                        <p>Somos una fundación para el cuidado y rescate de animales callejeros
+                            que opera en Cali desde el año 2014. Nos encontramos en la Avenida Siempre Viva
+                            del barrio El Ingenio.</p>
+                        <p>Además de rescatar los animales, nos encargamos de rehabilitarlos, esterilizarlos
+                            y buscarles un nuevo hogar gracias a nuestra red integrada de profesionales.</p>
+                    </div>
+                    <div class="small-12 columns text-center">
+                        <img src="{{ asset('img/nosotros.jpg') }}" alt="Visi&oacute;n" />
+                    </div>
+                </div>
+            </div>
+            <div class="medium-3 columns">
+                <aside class="callout primary">
+                    <div class="subheader">Misi&oacute;n</div>
+                    <p>Revisa nuestra misi&oacute;n haciendo clic <a href="{{ url('mision') }}">aqu&iacute;</a></p>
+                </aside>
+                <aside class="callout primary">
+                    <div class="subheader">Visi&oacute;n</div>
+                    <p>Revisa nuestra visi&oacute;n haciendo clic <a href="{{ url('vision') }}">aqu&iacute;</a></p>
+                </aside>
+            </div>
+        </div>
+    </section>
+{% endblock %}

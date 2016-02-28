@@ -1,0 +1,35 @@
+{% extends "master.twig" %}
+
+{% block contenido %}
+    <section id="adopta_perro">
+        <div class="row">
+            <div class="medium-9 columns">
+                <div class="row">
+                    <div class="small-12 columns">
+                        <h2>Adopta un perro</h2>
+                        <div class="row small-up-1 medium-up-3 large-up-4 galeria">
+                            <div class="column"><a href="{{ url('img/galeria/perrito01.jpg') }}"><img src="{{ asset('img/galeria/thumb/perrito01.jpg') }}" /></a></div>
+                            <div class="column"><a href="{{ url('img/galeria/perrito02.jpg') }}"><img src="{{ asset('img/galeria/thumb/perrito02.jpg') }}" /></a></div>
+                            <div class="column"><a href="{{ url('img/galeria/perrito03.jpg') }}"><img src="{{ asset('img/galeria/thumb/perrito03.jpg') }}" /></a></div>
+                            <div class="column"><a href="{{ url('img/galeria/perrito04.jpg') }}"><img src="{{ asset('img/galeria/thumb/perrito04.jpg') }}" /></a></div>
+                            <div class="column"><a href="{{ url('img/galeria/perrito05.jpg') }}"><img src="{{ asset('img/galeria/thumb/perrito05.jpg') }}" /></a></div>
+                            <div class="column"><a href="{{ url('img/galeria/perrito06.jpg') }}"><img src="{{ asset('img/galeria/thumb/perrito06.jpg') }}" /></a></div>
+                            <div class="column"><a href="{{ url('img/galeria/perrito07.jpg') }}"><img src="{{ asset('img/galeria/thumb/perrito07.jpg') }}" /></a></div>
+                            <div class="column"><a href="{{ url('img/galeria/perrito08.jpg') }}"><img src="{{ asset('img/galeria/thumb/perrito08.jpg') }}" /></a></div>
+                            <div class="column"><a href="{{ url('img/galeria/perrito09.jpg') }}"><img src="{{ asset('img/galeria/thumb/perrito09.jpg') }}" /></a></div>
+                            <div class="column"><a href="{{ url('img/galeria/perrito10.jpg') }}"><img src="{{ asset('img/galeria/thumb/perrito10.jpg') }}" /></a></div>
+                            <div class="column"><a href="{{ url('img/galeria/perrito11.jpg') }}"><img src="{{ asset('img/galeria/thumb/perrito11.jpg') }}" /></a></div>
+                            <div class="column"><a href="{{ url('img/galeria/perrito12.jpg') }}"><img src="{{ asset('img/galeria/thumb/perrito12.jpg') }}" /></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="medium-3 columns">
+                <aside class="callout primary">
+                    <div class="subheader">Adopta un gato</div>
+                    <p>Tal vez te interese adoptar un gatito. &Eacute;chale una ojeada haciendo clic <a href="{{ url('adopta/gato') }}">aqu&iacute;</a></p>
+                </aside>
+            </div>
+        </div>
+    </section>
+{% endblock %}

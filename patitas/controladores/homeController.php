@@ -1,54 +1,33 @@
 <?php
 
-class homeController extends myController{
-    public function index(){
-        return myView::render("home.index");
-    }
-    
-    public function educacion(){
-        return myView::render("home.linea_educativa");
-    }
-    
-    public function salud(){
-        return myView::render("home.linea_salud");
-    }
-    
-    public function variedad(){
-        return myView::render("home.linea_variedad");
+class homeController extends myController {
+
+    public function index() {
+        return myView::render("home.index", ["activo" => "inicio"]);
     }
 
-    public function cocina(){
-        return myView::render("home.linea_cocina");
+    public function mision() {
+        return myView::render("home.mision", ["activo" => "mision"]);
     }
-    
-    public function literatura(){
-        return myView::render("home.linea_literatura");
+
+    public function vision() {
+        return myView::render("home.vision", ["activo" => "vision"]);
     }
-    
-    public function saludar($name, $apellido){
-        return "Hola ".$name." ".$apellido." :)";
+
+    public function nosotros() {
+        return myView::render("home.nosotros", ["activo" => "nosotros"]);
     }
-    
-    public function verificarCodigo($cod){
-        $codigo = CodigoApp::where("codigo", $cod)->first();
-        
-        $ret = array();
-        if (sizeof($codigo)){
-            if ($codigo->estado == "V"){
-                $ret["error"] = 0;
-                $ret["valor"] = "OK";
-                $ret["cd"] = $cod;
-            }
-            else{
-                $ret["error"] = 1;
-                $ret["valor"] = "Codigo no valido";
-            }
-        }
-        else{
-            $ret["error"] = 1;
-            $ret["valor"] = "Codigo inexistente";
-        }
-        
-        return "retorno(".json_encode($ret).")";
+
+    public function adoptaGato() {
+        return myView::render("home.adopta_gato", ["activo" => "adopta_gato"]);
     }
+
+    public function adoptaPerro() {
+        return myView::render("home.adopta_perro", ["activo" => "adopta_perro"]);
+    }
+
+    public function contacto() {
+        return myView::render("home.contacto", ["activo" => "contacto"]);
+    }
+
 }

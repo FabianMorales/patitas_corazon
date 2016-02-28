@@ -1,4 +1,0 @@
-Options +FollowSymLinks
-RewriteEngine On
-DirectoryIndex index.html       
-order deny,allow

@@ -1,0 +1,27 @@
+{% extends "master.twig" %}
+
+{% block contenido %}
+    <section id="vision">
+        <div class="row">
+            <div class="medium-9 columns">
+                <div class="row">
+                    <div class="small-12 columns">
+                        <h2>Visi&oacute;n</h2>
+                        <p>Nuestra visi&oacute;n es ser la fundaci&oacute;n de cuidado animal con mayor impacto en la regi&oacute;n para el 2018,
+                            y en el pa&iacute;s en 2020, generando un cambio de conciencia de la sociedad para acabar con el
+                            abandono, la humillaci&oacute;n y el maltrato que sufren muchos animales.</p>
+                    </div>
+                    <div class="small-12 columns">
+                        <img src="{{ asset('img/vision.jpg') }}" alt="Visi&oacute;n" />
+                    </div>
+                </div>
+            </div>
+            <div class="medium-3 columns">
+                <aside class="callout primary">
+                    <div class="subheader">Misi&oacute;n</div>
+                    <p>Revisa nuestra misi&oacute;n haciendo clic <a href="{{ url('mision') }}">aqu&iacute;</a></p>
+                </aside>
+            </div>
+        </div>
+    </section>
+{% endblock %}
